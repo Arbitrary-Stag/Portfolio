@@ -13,13 +13,14 @@
     color: var(--accent);
 }
 
+/* sets a standard width/container for the majorit of the objects on the page */
 .wrapper {
     width: calc(100% - 2rem);
     max-width: var(--container);
     margin-inline: auto;
 }
 
-          /* resizes font based on window size */
+/* resizes font based on window size */
 .fs-resize {
     font-size: 1.5rem;
     font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
@@ -43,8 +44,19 @@
     background-color: var(--bgcolor2);
 }
 
+/* this class was necessary to distinguish the feature project size wise from the others */
+.featuredProject {
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--accent);
+    padding: 10px;
+    box-shadow: 10px 10px 5px black;
+    margin: 30px;
+    background-color: var(--bgcolor2);
+}
 
-                    /* Transforms based on device */
+
+/* Transforms based on device */
 
 @media screen and (max-width: 768px) {
     body header, body main h1, main article, body section h1, body section div, body section p, body footer ul{
@@ -57,7 +69,7 @@
     }             
 }      
 
-                /* HEADER and NAV Bar */
+/* HEADER and NAV Bar */
 nav {
     display: flex;
 }
@@ -95,7 +107,7 @@ body header {
     justify-content: space-between;
 }
 
-                   /* ABOUT ME */
+ /* ABOUT ME */
 
 body {
     background-image: url(..//images/boards.jpg);
@@ -133,7 +145,7 @@ main article img {
     align-items: center;
 } 
 
-                   /* PROJECTS*/
+/* PROJECTS*/
 
 body main section h1 {
     display: flex;
@@ -175,7 +187,11 @@ body main section p {
     background-color: var(--bgcolor3);
 }
 
-                /* Footer/Contact Me */
+.featuredProject:hover {
+    background-color: var(--bgcolor3);
+}
+
+/* Footer/Contact Me */
 
 body footer {
     margin-top: 30px;
