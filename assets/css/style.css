@@ -42,6 +42,7 @@
     box-shadow: 10px 10px 5px black;
     margin: 30px;
     background-color: var(--bgcolor2);
+    text-align: center;
 }
 
 /* this class was necessary to distinguish the feature project size wise from the others */
