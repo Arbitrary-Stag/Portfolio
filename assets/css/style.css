@@ -13,6 +13,18 @@
     color: var(--accent);
 }
 
+.link {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+}
+
+.link:hover {
+    color: var(--bgcolor);
+    text-decoration: underline;
+}
+
 /* sets a standard width/container for the majorit of the objects on the page */
 .wrapper {
     width: calc(100% - 2rem);
